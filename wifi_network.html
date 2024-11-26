@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wi-Fi Network</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            height: 100vh;
+            background-image: url('image/wifi.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #ffffff59;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.582);
+        }
+        .note {
+            background-color: #c4ecf1;
+            border-left: 5px solid #ff0707;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        code {
+            background: #eef;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Configure Wi-Fi on TP-Link Archer C50</h1>
+    <ul>
+        <li>
+            <strong>1. Connect the Router:</strong>
+            <ul>
+                <li>Plug the router into the power outlet.</li>
+                <li>Connect the internet cable to the router's <strong>WAN</strong> port (usually blue).</li>
+                <li>Connect your computer to the router via an Ethernet cable or Wi-Fi. 
+                    <div class="note">The default network name and password are on the router's label.</div>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <strong>2. Access the Router Settings:</strong>
+            <ul>
+                <li>Open a web browser and enter the router's IP address (<code>192.168.0.1</code> or <code>192.168.1.1</code>).</li>
+                <li>Log in using the default credentials:
+                    <ul>
+                        <li><strong>Username:</strong> <code>admin</code></li>
+                        <li><strong>Password:</strong> <code>admin</code></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <strong>3. Configure the Wi-Fi Network:</strong>
+            <ul>
+                <li>In the menu, select <strong>Wireless</strong>.</li>
+                <li>Set the following options for the 2.4 GHz and 5 GHz bands:
+                    <ul>
+                        <li><strong>Network Name (SSID):</strong> Customize the Wi-Fi network name.</li>
+                        <li><strong>Operation Mode:</strong> Use the default setting ("11bgn mixed" for 2.4 GHz, "11ac/n mixed" for 5 GHz).</li>
+                        <li><strong>Channel:</strong> Leave it on <strong>Auto</strong> or choose manually if interference occurs.</li>
+                        <li><strong>Bandwidth:</strong> Select <strong>20 MHz</strong> or <strong>20/40 MHz</strong> for 2.4 GHz and <strong>40 MHz</strong> or <strong>80 MHz</strong> for 5 GHz.</li>
+                    </ul>
+                </li>
+                <li>In <strong>Wireless Security</strong>, select:
+                    <ul>
+                        <li><strong>WPA2-PSK</strong> or <strong>WPA3-PSK</strong> as the security protocol.</li>
+                        <li>Enter a secure password.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <strong>4. Save and Restart:</strong>
+            <ul>
+                <li>Click <strong>Save</strong> after each configuration.</li>
+                <li>Restart the router from <strong>System Tools &gt; Reboot</strong>.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>5. Connect Your Devices:</strong>
+            <ul>
+                <li>Search for the new Wi-Fi network name and connect using the configured password.</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="note">
+        <strong>Note:</strong> If you encounter issues, consult the TP-Link Archer C50 manual or contact TP-Link support.
+    </div>
+    <p>If you have any questions, visit the <a href="support_contact.html">Contact and Support</a> section.</p>
+    <button onclick="window.location.href='initial_configuration.html'">Back</button>
+    <button onclick="window.location.href='security.html'">Next: Security</button>
+    <button onclick="window.location.href='index.html'">Return to Main Menu</button>
+</body>
+</html>

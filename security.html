@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            background-image: url('image/seguridad.jpeg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #333; /* Dark text */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        li {
+            background: #ffffff59;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.582);
+        }
+        strong {
+            color: #555;
+        }
+        .note {
+            background-color: #fffbe6;
+            border-left: 5px solid #ffc107;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        code {
+            background: #eef;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Configure Security for TP-Link Archer C50</h1>
+    <ul>
+        <li>
+            <strong>1. Access the Router Interface:</strong>
+            <ul>
+                <li>Connect your device to the router.</li>
+                <li>Open a browser and enter <code>192.168.0.1</code> or <code>192.168.1.1</code>.</li>
+                <li>Log in using your credentials (username: <code>admin</code>, password: <code>admin</code>).</li>
+            </ul>
+        </li>
+        <li>
+            <strong>2. Change Access Credentials:</strong>
+            <ul>
+                <li>Go to <strong>System Tools > Administration</strong>.</li>
+                <li>Change the default username and password.</li>
+                <li>Use a strong password.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>3. Configure Wi-Fi Network Security:</strong>
+            <ul>
+                <li>Go to <strong>Wireless > Wireless Security</strong>.</li>
+                <li>Select <strong>WPA2-PSK</strong> or <strong>WPA3-PSK</strong>.</li>
+                <li>Change the network name (SSID) and set a secure password.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>4. Enable the Firewall:</strong>
+            <ul>
+                <li>Activate the firewall in <strong>Security > Firewall</strong>.</li>
+                <li>Enable protection against common attacks.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>5. Update the Firmware:</strong>
+            <ul>
+                <li>Download the latest version from the TP-Link official website.</li>
+                <li>Update the firmware from <strong>System Tools > Firmware Upgrade</strong>.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>6. Additional Tips:</strong>
+            <ul>
+                <li>Disable WPS in <strong>Wireless > WPS Settings</strong>.</li>
+                <li>Set up a guest network.</li>
+                <li>Monitor connected devices.</li>
+            </ul>
+        </li>
+    </ul>
+    <button onclick="window.location.href='wifi_network.html'">Back</button>
+    <button onclick="window.location.href='troubleshooting.html'">Next: Troubleshooting</button>
+    <button onclick="window.location.href='index.html'">Return to Main Menu</button>
+</body>
+</html>

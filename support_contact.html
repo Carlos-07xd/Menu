@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact and Support</title>
+    <style>
+        body {  
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            background-image: url('image/contacto.webp');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #333; /* Dark text */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #ffffff80;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+        p {
+            text-align: center;
+            font-size: 1.1em;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .contact-info a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        button { margin: 10px; padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact and Support</h1>
+        <p>Do you have any questions or need help? Fill out the form or use the contact methods below.</p>
+        <form action="/submit" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Phone:</strong> +591 79877167</p>
+            <p><strong>Email:</strong> <a href="mailto:josecarlosbarberyflores@gmail.com">josecarlosbarberyflores@gmail.com</a></p>
+            <p><strong>Address:</strong> 3rd Ring Road / AV. Beni / Santa Cruz de la Sierra / Bolivia</p>
+        </div>
+    </div>
+    <button onclick="window.location.href='advanced_options.html'">Back</button>
+    <button onclick="window.location.href='index.html'">Return to Main Menu</button>
+</body>
+</html>

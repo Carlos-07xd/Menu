@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Common Troubleshooting</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            background-image: url('image/soluciones.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #000000; /* Dark text */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #2f2bff;
+        }
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            background: #ffffff59;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.582);
+        }
+        strong {
+            color: #000000;
+        }
+        .note {
+            background-color: #7ec2fa;
+            border-left: 5px solid #ff0707;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        code {
+            background: #eef;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Common Troubleshooting for TP-Link Archer C50 Router</h1>
+    <ul>
+        <li>
+            <strong>1. Unable to Access the Configuration Interface</strong>
+            <ul>
+                <li>Check the connection between the router and your device.</li>
+                <li>Try entering <code>192.168.0.1</code> or <code>192.168.1.1</code>.</li>
+                <li>Use the <code>ipconfig</code> or <code>ifconfig</code> command to find the "Default Gateway."</li>
+                <li>Restart the router if you forgot the credentials.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>2. Wi-Fi Connection is Slow or Drops Frequently</strong>
+            <ul>
+                <li>Change the Wi-Fi channel in <strong>Wireless > Wireless Settings</strong>.</li>
+                <li>Reduce interference by keeping the router away from microwaves and cordless phones.</li>
+                <li>Try the 5 GHz band if available.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>3. Some Devices Cannot Connect to Wi-Fi</strong>
+            <ul>
+                <li>Set the security to <strong>WPA2-PSK</strong> or <strong>WPA3-PSK</strong>.</li>
+                <li>Temporarily disable MAC address filtering.</li>
+                <li>Assign static IP addresses to problematic devices.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>4. Wi-Fi Network Does Not Appear in Available Networks</strong>
+            <ul>
+                <li>Enable SSID broadcasting in <strong>Wireless > Wireless Settings</strong>.</li>
+                <li>Check device compatibility with the configured band (2.4 GHz or 5 GHz).</li>
+                <li>Restart the router.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>5. Internet Is Not Working Even Though Router is Connected</strong>
+            <ul>
+                <li>Ensure the internet cable is correctly connected to the WAN port.</li>
+                <li>Check the WAN connection type in <strong>Network > WAN</strong>.</li>
+                <li>Restart the modem and router.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>6. Unable to Update Firmware</strong>
+            <ul>
+                <li>Download the latest firmware from the official TP-Link website.</li>
+                <li>Upload the file in <strong>System Tools > Firmware Upgrade</strong>.</li>
+                <li>Do not turn off the router during the update.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>7. Poor Wi-Fi Range</strong>
+            <ul>
+                <li>Place the router in a central and elevated position.</li>
+                <li>Adjust the antennas to optimize coverage.</li>
+                <li>Consider using a range extender.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>8. Connected Devices Have Limited or No Access</strong>
+            <ul>
+                <li>Enable the DHCP server in <strong>Network > LAN > DHCP Settings</strong>.</li>
+                <li>Increase the range of available IP addresses.</li>
+                <li>Restart the router.</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="note">
+        <strong>General Tips:</strong>
+        <ul>
+            <li>Restart the router regularly to avoid issues.</li>
+            <li>Monitor connected devices in <strong>Wireless > Wireless Statistics</strong>.</li>
+            <li>Change passwords periodically to enhance security.</li>
+        </ul>
+    </div>
+    <p>If the issue persists, contact our <a href="support_contact.html">technical support</a>.</p>
+    <button onclick="window.location.href='security.html'">Back</button>
+    <button onclick="window.location.href='advanced_options.html'">Next: Advanced Options</button>
+    <button onclick="window.location.href='index.html'">Return to Main Menu</button>
+</body>
+</html>
